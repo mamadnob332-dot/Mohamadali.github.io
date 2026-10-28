@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>سایت نمونه من</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f8fb;--surface:#ffffff;--text:#1b1f2a;--muted:#5d6577;--accent:#3b5bdb;--accent-text:#ffffff;--border:#e3e6ee;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#12141a;--surface:#1b1e27;--text:#eceef4;--muted:#a3abbd;--accent:#7c93ff;--accent-text:#12141a;--border:#2b3040}
+}
+:root[data-theme="dark"]{--bg:#12141a;--surface:#1b1e27;--text:#eceef4;--muted:#a3abbd;--accent:#7c93ff;--accent-text:#12141a;--border:#2b3040}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Vazirmatn",Tahoma,"Segoe UI",sans-serif;line-height:1.9}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+header{padding:20px 0;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;font-size:1.1rem}
+nav a{color:var(--muted);text-decoration:none;margin-inline-start:16px;font-size:.95rem}
+nav a:hover{color:var(--accent)}
+.hero{padding:56px 0 40px}
+.hero h1{font-size:clamp(1.8rem,6vw,2.6rem);line-height:1.5;margin:0 0 12px;font-weight:800}
+.hero p{color:var(--muted);font-size:1.05rem;margin:0 0 24px}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-text);padding:10px 24px;border-radius:12px;text-decoration:none;font-weight:600}
+section{padding:32px 0}
+h2{font-size:1.4rem;margin:0 0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:18px}
+.card h3{margin:0 0 6px;font-size:1.05rem}
+.card p{margin:0;color:var(--muted);font-size:.93rem}
+footer{padding:32px 0;color:var(--muted);text-align:center;font-size:.9rem;border-top:1px solid var(--border);margin-top:24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">نام شما</div>
+    <nav><a href="#services">خدمات</a><a href="#works">نمونه‌کارها</a><a href="#contact">تماس</a></nav>
+  </header>
+
+  <div class="hero">
+    <h1>سلام، من طراح سایت هستم</h1>
+    <p>سایت‌های ساده، سریع و زیبا برای کسب‌وکار شما می‌سازم.</p>
+    <a class="btn" href="#contact">درخواست پروژه</a>
+  </div>
+
+  <section id="services">
+    <h2>خدمات</h2>
+    <div class="grid">
+      <div class="card"><h3>سایت معرفی</h3><p>صفحه‌ای حرفه‌ای برای معرفی شما یا شرکتتان.</p></div>
+      <div class="card"><h3>فروشگاه آنلاین</h3><p>نمایش و فروش محصولات با طراحی ساده.</p></div>
+      <div class="card"><h3>پشتیبانی</h3><p>نگهداری و به‌روزرسانی ماهانه سایت.</p></div>
+    </div>
+  </section>
+
+  <section id="works">
+    <h2>نمونه‌کارها</h2>
+    <div class="grid">
+      <div class="card"><h3>پروژه اول</h3><p>توضیح کوتاه درباره پروژه.</p></div>
+      <div class="card"><h3>پروژه دوم</h3><p>توضیح کوتاه درباره پروژه.</p></div>
+      <div class="card"><h3>پروژه سوم</h3><p>توضیح کوتاه درباره پروژه.</p></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>تماس با من</h2>
+    <div class="card"><p>ایمیل: example@email.com<br>تلگرام: @your_id</p></div>
+  </section>
+
+  <footer>© ۱۴۰۵ — تمام حقوق محفوظ است</footer>
+</div>
+</body>
+</html>
